@@ -280,7 +280,7 @@ static NSString *const playbackRate = @"rate";
       if(self.onVideoLoadStart) {
           self.onVideoLoadStart(@{@"src": @{
                                           @"uri": [source objectForKey:@"uri"],
-                                          @"type": [source objectForKey:@"type"]?@"type": [source objectForKey:@"type"]:[NSNull null],
+                                          @"type": [source objectForKey:@"type"]?[source objectForKey:@"type"]:[NSNull null],
                                           @"isNetwork": [NSNumber numberWithBool:(bool)[source objectForKey:@"isNetwork"]]},
                                   @"target": self.reactTag
                                   });
